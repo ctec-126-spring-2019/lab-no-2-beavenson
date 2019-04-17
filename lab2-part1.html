@@ -32,8 +32,30 @@
         // your code goes here
         // be sure to assign the roman numeral to the variable romanNumeral
         // it will be used to display it on the web page using the code below
-
-
+        let integer = parseInt(prompt("Tell me a number (1-10)"));
+        if(integer > 10 || integer < 1){
+            console.error("ERR: Input outside of bounds");
+        }else if(integer == 1){
+            romanNumeral = "I";
+        }else if(integer == 2){
+            romanNumeral = "II";
+        }else if(integer == 3){
+            romanNumeral = "III";
+        }else if(integer == 4){
+            romanNumeral = "IV";
+        }else if(integer == 5){
+            romanNumeral = "V";
+        }else if(integer == 6){
+            romanNumeral = "VI";
+        }else if(integer == 7){
+            romanNumeral = "VII";
+        }else if(integer == 8){
+            romanNumeral = "VIII";
+        }else if(integer == 9){
+            romanNumeral = "IX";
+        }else if(integer == 10){
+            romanNumeral = "X";
+        }
 
         // do not modify start
         let outputDiv = document.getElementById('output');
